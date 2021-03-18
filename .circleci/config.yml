@@ -31,10 +31,10 @@ jobs:
       - run:
           name: Run build
           command: yarn ng build --prod
-          
+
       - run:
           name: Run tests
-          command: yarn ng test --single-run
+          command: yarn ng test --watch=false
 
 workflows:
   # Below is the definition of your workflow.
