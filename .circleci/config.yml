@@ -32,6 +32,9 @@ jobs:
       - run:
           name: Run build
           command: yarn ng build --prod
+      - run:
+          name: set environment variable
+          command: export CHROME_BIN=/usr/bin/chromium-browser
 
       - run:
           name: Run tests
